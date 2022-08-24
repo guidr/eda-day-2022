@@ -1,0 +1,15 @@
+service: example-service
+
+provider:
+  name: aws
+  region: ${opt:region, 'eu-west-2'}
+  runtime: nodejs16.x
+
+functions:
+  graphql:
+    handler: functions/hello.handler
+    name: hello-world
+    events:
+      - http:
+          method: GET
+          path: /
