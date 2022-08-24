@@ -13,6 +13,7 @@
   "dependencies": {},
   "devDependencies": {
     "serverless": "^3.22.0",
+    "serverless-slic-watch-plugin": "^1.3.0",
     "typescript": "^4.7.4"
   }
 }

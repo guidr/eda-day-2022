@@ -1,5 +1,8 @@
 service: example-service
 
+plugins:
+  - serverless-slic-watch-plugin
+
 provider:
   name: aws
   region: ${opt:region, 'eu-west-2'}
