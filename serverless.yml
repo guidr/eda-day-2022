@@ -6,7 +6,7 @@ provider:
   runtime: nodejs16.x
 
 functions:
-  graphql:
+  hello-world:
     handler: functions/hello.handler
     name: hello-world
     events:
