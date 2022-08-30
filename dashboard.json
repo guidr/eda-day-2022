@@ -1,0 +1,278 @@
+{
+    "start": "-PT3H",
+    "widgets": [
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/ApiGateway",
+              "5XXError",
+              "ApiName",
+              "dev-example-service",
+              {
+                "stat": "Sum"
+              }
+            ]
+          ],
+          "title": "5XXError API dev-example-service",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/ApiGateway",
+              "4XXError",
+              "ApiName",
+              "dev-example-service",
+              {
+                "stat": "Sum"
+              }
+            ]
+          ],
+          "title": "4XXError API dev-example-service",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 8,
+        "y": 0
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/ApiGateway",
+              "Latency",
+              "ApiName",
+              "dev-example-service",
+              {
+                "stat": "Average"
+              }
+            ],
+            [
+              "AWS/ApiGateway",
+              "Latency",
+              "ApiName",
+              "dev-example-service",
+              {
+                "stat": "p95"
+              }
+            ]
+          ],
+          "title": "Latency API dev-example-service",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 16,
+        "y": 0
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/ApiGateway",
+              "Count",
+              "ApiName",
+              "dev-example-service",
+              {
+                "stat": "Sum"
+              }
+            ]
+          ],
+          "title": "Count API dev-example-service",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 0,
+        "y": 6
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/Lambda",
+              "Errors",
+              "FunctionName",
+              "hello-world",
+              {
+                "stat": "Sum"
+              }
+            ]
+          ],
+          "title": "Lambda Errors Sum per Function",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 8,
+        "y": 6
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/Lambda",
+              "Throttles",
+              "FunctionName",
+              "hello-world",
+              {
+                "stat": "Sum"
+              }
+            ]
+          ],
+          "title": "Lambda Throttles Sum per Function",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 16,
+        "y": 6
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/Lambda",
+              "Duration",
+              "FunctionName",
+              "hello-world",
+              {
+                "stat": "Average"
+              }
+            ]
+          ],
+          "title": "Lambda Duration Average per Function",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 0,
+        "y": 12
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/Lambda",
+              "Duration",
+              "FunctionName",
+              "hello-world",
+              {
+                "stat": "p95"
+              }
+            ]
+          ],
+          "title": "Lambda Duration p95 per Function",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 8,
+        "y": 12
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/Lambda",
+              "Duration",
+              "FunctionName",
+              "hello-world",
+              {
+                "stat": "Maximum"
+              }
+            ]
+          ],
+          "title": "Lambda Duration Maximum per Function",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 16,
+        "y": 12
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/Lambda",
+              "Invocations",
+              "FunctionName",
+              "hello-world",
+              {
+                "stat": "Sum"
+              }
+            ]
+          ],
+          "title": "Lambda Invocations Sum per Function",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 0,
+        "y": 18
+      },
+      {
+        "type": "metric",
+        "properties": {
+          "metrics": [
+            [
+              "AWS/Lambda",
+              "ConcurrentExecutions",
+              "FunctionName",
+              "hello-world",
+              {
+                "stat": "Maximum"
+              }
+            ]
+          ],
+          "title": "Lambda ConcurrentExecutions Maximum per Function",
+          "view": "timeSeries",
+          "region": "eu-west-2",
+          "period": 300
+        },
+        "width": 8,
+        "height": 6,
+        "x": 8,
+        "y": 18
+      }
+    ]
+  }
